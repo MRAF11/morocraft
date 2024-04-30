@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+     <!-- gsap link -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+     <!-- gsap link -->
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!-- bootstrap link -->
+    
+     
+    
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar top -->
+    <div class="container">
+        <div class="navbar-top">
+            <div class="social-link">
+                <i><img src="./image/twitter.png" alt="" width="30px"></i>
+                <i><img src="./image/facebook.png" alt="" width="30px"></i>
+                <i><img src="./image/google-plus.png" alt="" width="30px"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;"><h3>MoroCraft</h3></a>
+            </div>
+            <div class="icons">
+                <i><img src="./image/search.png" alt="" width="20px"></i>
+                <div class="user-dropdown">
+                    <button class="user-dropdown-btn">
+                      <i><img src="./image/Capture.PNG" alt="User Image" width="25px"></i>
+                    </button>
+                    <div class="user-dropdown-content">
+                      <p>Hi, Username</p>
+                      <button  class="logout-btn"><a href="#" style="text-decoration: none; color: white;">Logout</a></button>
+                    </div>
+                  </div>
+                <i><img src="./image/shopping-cart.png" alt="" width="25px"></i>
+            </div>
+        </div>
+    </div>
+    <!-- navbar top -->
+
+    <!-- main content -->
+    <div class="main-content">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+           <div class="container">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><i><img src="./image/menu.png" alt="" width="30px"></i></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="drawers.html">Shop</a>
+                </li>
+                <div class="dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+                </li>
+                <div class="dropdown-content">
+                    <a href="fourniture.html" style="text-decoration: none;">Fourniture</a>
+                    <a href="Textiles.html" style="text-decoration: none;">Textiles</a>
+                    <a href="lighting.html" style="text-decoration: none;">lighting</a>
+                  </div>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+           </div> 
+          </nav>
+
+
+          <div id="text" class="content">
+            <h1>Moroccan Elegance
+            </h1>
+            <p>Bringing Timeless Beauty to Your Space, Always by Your Side</p>
+            <div id="btn1"><button><a href="drawers.html" style="text-decoration: none; color: black;">Shop Now</a></button></div>
+          </div>
+          
+    </div>
+    <!-- main content -->
+
+    <!-- card1 -->
+    <div class="container">
+        <h3 class="text-center" style="padding-top: 30px;">SERVICES WE OFFER</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./favimg/hande.jpeg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">100% handmade</h5>
+                        <p class="text-center">Authentic unique pieces made entirely by hand</p>
+                        <img src="./favimg/button.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./favimg/service2.jpeg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Rustic Chic Heritage</h5>
+                        <p class="text-center"> Discover the rustic beauty of Moroccan craftsmanship with our collection of artisan-made furniture. Crafted from natural materials such as reclaimed wood and wrought iron, each piece exudes warmth and character.</p>
+                        <img src="./favimg/button.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./favimg/service3.jpeg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Timeless Craftsmanship</h5>
+                        <p class="text-center">  Dive into the heritage of Morocco passed down through generations.Add a touch of timeless elegance to your space with our authentically crafted Moroccan furniture.</p>
+                        <img src="./favimg/button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card1 -->
+
+    <!-- card2 -->
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                   <img src="./favimg/fourn.jpeg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <a href="fourniture.html" style="text-decoration: none; color: black;"><h4 class="card-titel">Forniture</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./favimg/textiles.png" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                  <a href="Textiles.html" style="text-decoration: none; color: black;"><h4 class="card-titel">Textiles</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img id="imgcard" src="./favimg/lighting.jpeg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <a href="lighting.html" style="text-decoration: none; color: black;"> <h4 class="card-titel">lighting</h4> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card2 -->
+
+    <!-- card3 -->
+    <div class="container">
+        <h3 class="text-center" style="margin-top: 50px;">Latest products</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                 <img src="./favimg/pr1.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <i class="fa fa-star-o" style="color: rgb(245, 220, 30);"></i>
+                            <i class="fa fa-star-o" style="color: rgb(245, 220, 30);"></i>
+                            <i class="fa fa-star-o" style="color: rgb(245, 220, 30);"></i>
+                            <i class="fa fa-star-o" style="color: rgb(245, 220, 30);"></i>
+                            <i class="fa fa-star-o" style="color: rgb(245, 220, 30);"></i>
+                        </div>
+                        <span><strong> leather pouf</strong></span>
+                        <p class="card-text text-center">$350</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./favimg/pr2.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan rug floor pillow</strong></span>
+                        <p class="card-text text-center">$200</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./favimg/pr3.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan table living room</strong></span>
+                        <p class="card-text text-center">$599.99</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./favimg/pr5.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan rug 112 X 167 cm</strong></span>
+                        <p class="card-text text-center">$999.99</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./favimg/pr6.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan Box</strong></span>
+                        <p class="card-text text-center">$400</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./favimg/pr7.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Rainbow Moroccan lantern</strong></span>
+                        <p class="card-text text-center">$100.50</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./favimg/pr8.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Tea table</strong></span>
+                        <p class="card-text text-center">$150.50</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./favimg/pr9.jpeg" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Floor pillow</strong></span>
+                        <p class="card-text text-center">$500.60</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card3 -->
+
+    <!-- about -->
+    <div class="main-container">
+        <div class="head-container"> 
+            <h1> <strong>MoroCraft , your online Moroccan craft store!</strong></h1>
+            <p><strong >MoroCraft </strong>invites you to experience this subtle form of artisanal and traditional art! Moroccan craftsmanship which is based on a purely ancestral process and explicitly highlights the cultural heritage of Morocco. Discover a large collection of decorative items, tableware, delicatessens and interior scents on our online Moroccan craft store. Chabi Chic revisits the traditional Moroccan lifestyle for you with trendy and chic items, and having as a heritage the artisanal know-how of Morocco. Find in our selections the item that will show originality and add that coveted special Moroccan touch to your interior!</p>
+        </div>
+    </div>
+    <div class="main-container2">
+        <div class="head-container"> 
+            <h3 style="color: black;"> <strong>MoroCraft , offers you a wide selection of products from Moroccan craftsmanship!</strong></h3><br>
+            <p>Our selection is intended to be authentic, refined and delicate, suitable for all interiors and to suit everyone's desires. Find a whole selection of tableware which passionately represents the revival of Moroccan craftsmanship.</p>
+
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="head-container"> 
+            <h1> <strong>The best of Moroccan craftsmanship now just a click away!</strong></h1>
+            <p><strong >MoroCraft </strong>invites you to discover unique products, designed directly from the know-how of Moroccan craftsmanship. Our online Moroccan craft store is just an extremely rich, varied and exclusive universe with well-considered touches, and which manages to easily adapt respect for tradition to the contemporary world.</p>
+        </div>
+    </div>
+    <!-- about -->
+     
+    <!--footer-->
+    <!-- footer -->
+    <footer id="footer">
+        <h1 class="logo text-center">MoroCraft</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong><span class="logo">MoroCraft</span></strong>. All Rights Reserved
+        </div>
+       
+    </footer>
+    <!-- footer -->
+
+    <!--footer-->
+
+<script src="script.js"></script>
+
+</body>
+</html>

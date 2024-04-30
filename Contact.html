@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- bootstrap link -->
+     <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+     <!-- bootstrap link -->
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <style>
+          *{
+    margin: 0;
+    padding: 0;
+}
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+    color: #B28257;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* navbar top */
+
+/* navbar */
+#navbar-color{
+    background-color:#B28257;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: black;
+}
+/* navbar */
+.content{
+
+    width: 100%;
+    height: 50vh;
+    background-image: url(./favimg/Capture.PNG);
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: 100px;
+}
+.contact-title{
+  margin-left: 650px;
+  margin-bottom: 30px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* Ensures proper placement next to other elements */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensures the dropdown content appears above other elements */
+    text-decoration: none;
+    border-radius: 20px;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content :hover {
+    color: #B28257;
+  } 
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+/*----*/
+
+.contact-us {
+  border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  background-color:#fff; 
+  padding: 20px; 
+  border-radius: 5px; 
+  margin: 0 auto; 
+width: 500px;
+  
+}
+.contact-us label {
+  display: block; /* Display labels on their own line */
+  margin-bottom: 5px; /* Add some space between labels and inputs */
+  font-weight: bold; /* Make labels slightly bolder */
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  width: 100%; /* Set width to 100% for full width inputs */
+  padding: 10px; /* Add some padding inside the inputs */
+  border: 1px solid #ccc; /* Light gray borders for inputs */
+  border-radius: 3px; /* Rounded corners for inputs */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.contact-us textarea {
+  height: 150px; /* Set a height for the message textarea */
+}
+
+.contact-us input[type="checkbox"] {
+  margin-right: 5px; /* Add space between checkbox and label text */
+}
+
+.contact-us button {
+  background-color: black; /* Green color for the button */
+  color: white; /* White text color for the button */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove default button border */
+  border-radius: 3px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  width: 150px;
+}
+
+
+.contact-us button:hover {
+  background-color: #B28257; /* Darker green on hover */
+  color: white;
+}
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    background-color: #B28257;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+.map{
+  width: 30px;
+ margin: 400px;
+}
+
+/* footer */
+
+    </style>
+    
+    <!-- navbar top -->
+    <div class="container">
+      <div class="navbar-top">
+          <div class="social-link">
+              <i><img src="./image/twitter.png" alt="" width="30px"></i>
+              <i><img src="./image/facebook.png" alt="" width="30px"></i>
+              <i><img src="./image/google-plus.png" alt="" width="30px"></i>
+          </div>
+          <div class="logo">
+              <a href="index.html" style="text-decoration: none;"><h3>MoroCraft</h3></a>
+          </div>
+          <div class="icons">
+              <i><img src="./image/search.png" alt="" width="20px"></i>
+              <i><img src="./image/heart.png" alt="" width="20px"></i>
+              <i><img src="./image/shopping-cart.png" alt="" width="25px"></i>
+          </div>
+      </div>
+  </div>
+  <!-- navbar top -->
+  <!-- main content -->
+  <div class="main-content">
+      <nav class="navbar navbar-expand-md" id="navbar-color">
+         <div class="container">
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span><i><img src="./image/menu.png" alt="" width="30px"></i></span>
+          </button>
+        
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drawers.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login_form.php">log in</a>
+              </li>
+              <div class="dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+                </li>
+                <div class="dropdown-content">
+                    <a href="fourniture.html">Fourniture</a>
+                    <a href="Textiles.html">Textiles</a>
+                    <a href="lighting.html">lighting</a>
+                  </div>
+                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+         </div> 
+        </nav>
+  
+        <div class="content"></div>
+        <h2 class="contact-title">Get In Touch</h2>
+    <div class="contact-container">
+    <form class="contact-us" action="contact.php" method="POST">
+          
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+          </div><br>
+          <label for="agreement">
+            <input type="checkbox" id="agreement" name="agreement"  required>
+            I hereby accept the data protection regulations.
+          </label><br><br>
+          <center>
+            <button type="submit" name="send" value="send" class="form-btn">Send</button>
+          </center>
+        </form>
+        </div>
+         <!-- footer -->
+    <footer id="footer">
+      <h1 class="logo text-center">MoroCraft</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+      <div class="icons text-center">
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-google"></i>
+          <i class="bx bxl-instagram"></i>
+      </div>
+      <div class="copyright text-center">
+          &copy; Copyright <strong><span class="logo">MoroCraft</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer>
+  <!-- footer -->
+  </body>
+</html>

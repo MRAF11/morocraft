@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-dropdown-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  .user-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .user-dropdown-content p {
+    margin: 0;
+    padding: 12px 16px;
+  }
+  
+  .user-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .user-dropdown:hover .user-dropdown-content,
+  .user-dropdown-btn:focus .user-dropdown-content { /* Show dropdown on hover or focus */
+    display: block;
+  }
+  
+  .logout-btn { 
+    background-color: black; 
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+  }
+  .logout-btn:hover { 
+    background-color: #d0af9e; 
+    color:black;
+  }
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+    color: #B28257;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* navbar top */
+
+/* main content */
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./favimg/mg2.PNG);
+    background-size: cover;
+    background-position: 70%;
+}
+
+/* navbar */
+#navbar-color{
+    background-color:#B28257;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: black;
+}
+/* navbar */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Ensures proper placement next to other elements */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensures the dropdown content appears above other elements */
+    text-decoration: none;
+    border-radius: 20px;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content :hover {
+    color: #B28257;
+  } 
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+    color: antiquewhite;
+}
+.content h1{
+    font-size: 50px;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background-color:whitesmoke;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 50px;
+    border: whitesmoke;
+}
+.butt{
+    background-image: url(button.png);
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+}
+#btn1 button:hover{
+    background-color:whitesmoke;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* main content */
+
+/* card1 */
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: 0;
+}
+#btn2 button:hover{
+    background-color: rgba(238,224,208);
+}
+/* card1 */
+
+/* card2 */
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+
+/* card2 */
+.checked {
+    color: orange;
+  }
+/* card3 */
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: black;
+    border: 1px solid;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+#btn3 button:hover{
+    background:  rgb(213, 128, 67);
+    color: white;
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+.imgcard{
+    width: 253px;
+    transition: transform 0.3s ease;
+}
+.imgcard:hover{
+    transform: scale(1.2);
+}
+/* card3 */
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color: rgba(238,224,208);
+}
+/*About*/
+.main-container{
+    border-radius: 5%;
+    background-color: #f6f5f5;
+    padding: 150px;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 150px;
+   height: 170px;
+  width: 1000px;
+  align-content: center;
+  border: 2px black;
+ 
+}
+/* footer */
+#footer{
+    width: 100%;
+    background-color: #B28257;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 0;
+    background-color: #B28257 ;
+}
+.credite{
+    color: white;
+}
+/* footer */
+
+
+.main-container2{
+    border-radius: 5%;
+    background-color: #d0af9e;
+    padding: 150px;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 150px;
+   height: 200px;
+  width: 1000px;
+  align-content: center;
+  border: 2px black;
+ 
+}

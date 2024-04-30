@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+     <!-- bootstrap link -->
+     <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+     <!-- bootstrap link -->
+    <title>lighting page</title>
+  </head>
+  <body>
+    <style>
+          *{
+    margin: 0;
+    padding: 0;
+}
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+    color: #B28257;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* navbar top */
+
+/* navbar */
+#navbar-color{
+    background-color:#B28257;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: black;
+}
+/* navbar */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Ensures proper placement next to other elements */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensures the dropdown content appears above other elements */
+    text-decoration: none;
+    border-radius: 20px;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content :hover {
+    color: #B28257;
+  } 
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+/*   */
+/* General menu styling */
+.navigation-container {
+  background-color: white; /* Adjust as desired */
+  padding: 10px 20px; /* Adjust as desired */
+  margin-top: -20px;
+  margin-left: 600px;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.pro-item{
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+.category-link {
+  text-decoration: none;
+  color: black; 
+  transition: 0.5s ease; 
+}
+
+.category-link:hover {
+  border-bottom: 5px solid #B28257; /* Black underline, adjust thickness and color */
+ 
+}
+
+/*nav products*/
+/* drop down products */
+
+.dropdown-pro {
+    position: relative;
+    display: inline-block; /* Ensures proper placement next to other elements */
+    padding-bottom: 50px;
+  }
+  
+  .dropdown-content-pro {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensures the dropdown content appears above other elements */
+    text-decoration: none;
+    margin-left: -40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+  }
+  
+  .dropdown-content-pro a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content-pro :hover {
+    color: #B28257;
+  } 
+  .dropdown-pro:hover .dropdown-content-pro{
+    display: block;
+  }
+  .title-text {
+  font-size: 28px; 
+  font-weight: bold; 
+  color: #383838; 
+}
+.title-container{
+    padding-left: 650px;
+}
+.checked {
+    color: orange;
+  }
+
+hr {
+  height: 2px; 
+  border-color: #B28257; 
+  margin: 10px 0;
+}
+/* product container  */
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: black;
+    border: 1px solid;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+#btn3 button:hover{
+    background:  rgb(213, 128, 67);
+    color: white;
+
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+.imgcard{
+    width: 253px;
+    transition: transform 0.3s ease;
+}
+.imgcard:hover{
+    transform: scale(1.2);
+}
+.container{
+    display: flex;
+  flex-wrap: wrap;
+}
+/* card3 */
+/* footer */
+#footer{
+    width: 100%;
+    background-color: #B28257;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+    </style>
+    
+<!-- navbar top -->
+<div class="container">
+  <div class="navbar-top">
+      <div class="social-link">
+          <i><img src="./image/twitter.png" alt="" width="30px"></i>
+          <i><img src="./image/facebook.png" alt="" width="30px"></i>
+          <i><img src="./image/google-plus.png" alt="" width="30px"></i>
+      </div>
+      <div class="logo">
+          <h3>MoroCraft</h3>
+      </div>
+      <div class="icons">
+          <i><img src="./image/search.png" alt="" width="20px"></i>
+          <i><img src="./image/heart.png" alt="" width="20px"></i>
+          <i><img src="./image/shopping-cart.png" alt="" width="25px"></i>
+      </div>
+  </div>
+</div>
+<!-- navbar top -->
+<!-- main content -->
+<div class="main-content">
+  <nav class="navbar navbar-expand-md" id="navbar-color">
+     <div class="container">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span><i><img src="./image/menu.png" alt="" width="30px"></i></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login_form.php">log in</a>
+          </li>
+          <div class="dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <div class="dropdown-content">
+                <a href="fourniture.html">Fourniture</a>
+                <a href="Textiles.html">Textiles</a>
+                <a href="lighting.html">lighting</a>
+              </div>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+     </div> 
+    </nav><br><br>
+          </nav>
+
+
+ <!--navbar products-->
+
+ <div class="navigation-container">
+  <ul class="navigation-list">
+    <div class="dropdown-pro">
+    <li class="pro-item">
+      <a class="category-link" href="#" style="text-decoration: none; color: black;">Wall lamps</a>
+    </li>
+    <div class="dropdown-content-pro">
+      <img src="./favimg/light.PNG" style="width: 160px; height: 90px; border-radius: 10px;">
+      <a href="#">Hanging lamps</a>
+      <a href="#">Table lamps</a>
+      <a href="#">Rattan lamps</a>
+    </div>
+  </div>
+  <div class="dropdown-pro">
+    <li class="pro-item">
+      <a class="category-link" href="#" style="text-decoration: none; color: black;">lamps & lanterns</a>
+    </li>
+    <div class="dropdown-content-pro">
+      <img src="./favimg/walllight.PNG" style="width: 180px; height: 90px; border-radius: 10px;">
+      <a href="#">Iron lanterns</a>
+      <a href="#">lanterns</a>
+      <a href="#">Candle holders</a>
+    </div>
+  </div>
+    <div class="dropdown-pro">
+    <li class="pro-item">
+      <a class="category-link" href="#" style="text-decoration: none; color: black;">Candlelights</a>
+    </li>
+    <div class="dropdown-content-pro">
+    <img src="./favimg/candellight.PNG" style="width: 180px; height: 90px; border-radius: 10px;">
+      <a href="#">Brass wall lamps</a>
+      <a href="#">Iron wall lamps</a>
+      <a href="#">Glass wall lamps</a>
+    </div>
+     </div>
+       </div>
+      <div class="title-container">
+         <span class="title-text">Oriental Lighting</span>
+      </div>
+     <hr>
+     <!-- product container -->
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                 <img src="./imgfourniture/L1.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                        </div>
+                        <span><strong> Hanging Light</strong></span>
+                        <p class="card-text text-center">$24.00</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L2.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Oriental Silver Lamp Lubanah</strong></span>
+                        <p class="card-text text-center">$200</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L3.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Oriental Brass Lamp Belouta</strong></span>
+                        <p class="card-text text-center">$75.00</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L4.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Oriental Silver Lamp Marana</strong></span>
+                        <p class="card-text text-center">$121</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L5.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Oriental Silver Lamp </strong></span>
+                        <p class="card-text text-center">$84.00</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L6.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong>  Oriental Silver Lamp </strong></span>
+                        <p class="card-text text-center">$89.99</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L7.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong>  Oriental Silver Lamp </strong></span>
+                        <p class="card-text text-center">$200</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L8.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Oriental Lamp Ashraq</strong></span>
+                        <p class="card-text text-center">$200</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L9.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan  Lamp </strong></span>
+                        <p class="card-text text-center">$50.00</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L10.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Brass Lamp Enfal</strong></span>
+                        <p class="card-text text-center">$50</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L11.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong> Moroccan  Lamp </strong></span>
+                        <p class="card-text text-center">$200</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                   <img src="./imgfourniture/L12.PNG" alt="" class="imgcard">
+                    <div class="card-body">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span><strong>Moroccan Lamp </strong></span>
+                        <p class="card-text text-center">$28.00</p>
+                        <div id="btn3"><button>To the product</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+<footer id="footer">
+    <h1 class="logo text-center">MoroCraft</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+    <div class="icons text-center">
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-google"></i>
+        <i class="bx bxl-instagram"></i>
+    </div>
+    <div class="copyright text-center">
+        &copy; Copyright <strong><span class="logo">MoroCraft</span></strong>. All Rights Reserved
+    </div>
+  
+</footer>
+<!-- footer -->
+           
+
+
+</body>
+</html>
