@@ -31,5 +31,11 @@ color: #fff;
  body {
   overflow-x: hidden;
  }
+ #tr {
+  margin-left: -2cm;
+ }
+ #tw {
+  display: 2cm;
+ }
 
  
