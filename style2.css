@@ -28,3 +28,8 @@ color: #fff;
  #one {
   margin-left: -2cm;
  }
+ body {
+  overflow-x: hidden;
+ }
+
+ 
