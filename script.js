@@ -71,3 +71,18 @@ ScrollTrigger.create({
 });
 
 
+const boutonAjouter = document.getElementById('ajouterAuPanier');
+
+// Sélection du span pour afficher le nombre de produits dans le panier
+const spanNombreDansPanier = document.getElementById('nombreDansPanier');
+
+// Variable pour stocker le nombre de produits dans le panier
+let nombreProduitsDansPanier = 0;
+
+// Ajouter un écouteur d'événements pour le clic sur le bouton "Ajouter au panier"
+boutonAjouter.addEventListener('click', () => {
+  // Incrémenter le nombre de produits dans le panier
+  nombreProduitsDansPanier++;
+  // Mettre à jour le texte dans le span
+  spanNombreDansPanier.textContent = nombreProduitsDansPanier;
+});
