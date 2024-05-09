@@ -55,6 +55,20 @@ window.onload = function() {
     updateCartCount(cart.length);
 };
 
+// Au chargement de la page
+window.onload = function() {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    updateCartCount(cart.length);
+
+    // Gestionnaire d'événements pour réinitialiser le panier lors du clic sur l'image du panier
+    var cartImage = document.querySelector('.cart i img');
+    if (cartImage) {
+        cartImage.addEventListener('click', function() {
+            localStorage.removeItem('cart'); // Efface le panier du stockage local
+            updateCartCount(0); // Met à jour le compteur à zéro
+        });
+    }
+};
 
   
 
