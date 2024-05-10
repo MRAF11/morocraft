@@ -89,6 +89,27 @@ cartIcon.addEventListener('mouseout', function() {
 cartIcon.addEventListener('click', function() {
     cartCounter.innerText = '0';
 });
+// Sélectionnez tous les boutons "ajouter au panier"
+var addToCartButtons = document.querySelectorAll("#btn3 button");
+
+// Parcourez chaque bouton et ajoutez un gestionnaire d'événements de clic
+addToCartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        // Créez un élément de message
+        var message = document.createElement("div");
+        message.textContent = "Produit ajouté";
+        message.classList.add("cart-added-message"); // Ajoutez une classe pour le style CSS
+
+        // Insérez le message à côté du bouton cliqué
+        button.parentNode.insertBefore(message, button.nextSibling);
+
+        // Supprimez le message après 2 secondes
+        setTimeout(function() {
+            message.remove();
+        }, 2000);
+    });
+});
+
 
 
   

@@ -56,6 +56,9 @@ margin-bottom: 1.2cm;
 .cart img {
   height: 1cm;
   width: auto;
+  margin-top: 2cm;
+  cursor: pointer;
+  margin-left: 0.2cm;
   
 }
 #navbar {
