@@ -58,4 +58,27 @@ margin-bottom: 1.2cm;
   width: auto;
   
 }
+#navbar {
+  position: fixed;
+  color: #fff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement à l'intérieur de la navbar */
+  z-index: 1000; 
+}
+.cart-message {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 75%;
+  transform: translateX(-50%);
+  background-color:#B28257;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: small;
+ 
+}
+
+
+
+
  

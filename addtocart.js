@@ -70,5 +70,26 @@ window.onload = function() {
     }
 };
 
+// Sélectionner l'icône du panier et le message
+const cartIcon = document.getElementById('cart-icon');
+const cartCounter = document.getElementById('cart-counter');
+const cartMessage = document.getElementById('cart-message');
+
+// Ajouter un événement pour afficher le message lorsque le curseur est sur l'icône du panier
+cartIcon.addEventListener('mouseover', function() {
+    cartMessage.style.display = 'block';
+});
+
+// Ajouter un événement pour masquer le message lorsque le curseur quitte l'icône du panier
+cartIcon.addEventListener('mouseout', function() {
+    cartMessage.style.display = 'none';
+});
+
+// Réinitialiser le compteur lorsque le curseur est sur l'icône du panier
+cartIcon.addEventListener('click', function() {
+    cartCounter.innerText = '0';
+});
+
+
   
 

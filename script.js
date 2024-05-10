@@ -86,3 +86,5 @@ boutonAjouter.addEventListener('click', () => {
   // Mettre à jour le texte dans le span
   spanNombreDansPanier.textContent = nombreProduitsDansPanier;
 });
+
+
