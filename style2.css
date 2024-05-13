@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Jersey+25&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20+Charted&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 
 .logo {
@@ -80,8 +81,38 @@ margin-bottom: 1.2cm;
   font-size: small;
  
 }
+.card-titel {
+box-shadow: 2px 2px 2px 2px ;
+background-color: rgba(143, 79, 31, 0.507);
+border-radius: 16px;
+margin-left: 5cm;
+font-family: "Poetsen One", sans-serif;
+font-weight: 400;
+font-style: normal;
 
+}
+.contact-title {
+  font-family: "Poetsen One", sans-serif;
+  color: #B28257;
+  
+}
+.content {
+  font-family: "Poetsen One", sans-serif;
+}
+label {
+  font-family: "Poetsen One", sans-serif;
+  color: #B28257;
+}
+.contact-us input  {
+  box-shadow: 2px 2px 2px;
+} 
+.contact-us  textarea {
+  box-shadow: 2px 2px 2px;
 
+}
+.btn1 {
+  color: #B28257;
+}
 
 
  
