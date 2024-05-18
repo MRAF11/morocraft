@@ -47,11 +47,6 @@ ScrollTrigger.create({
   onEnterBack: () => slideInAnimation.play(), // Fonction exécutée lorsque l'utilisateur fait défiler vers le haut et que l'élément réapparaît dans le viewport
 });
 
-
-
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Création de l'animation avec GSAP
@@ -86,6 +81,7 @@ boutonAjouter.addEventListener('click', () => {
   // Mettre à jour le texte dans le span
   spanNombreDansPanier.textContent = nombreProduitsDansPanier;
 });
+
 
 
 
